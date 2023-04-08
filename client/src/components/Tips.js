@@ -1,22 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../css/Tips.css'
+import axios from "axios";
 
-function TipsPage() {
+const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
 
-
-
-  
-  // const [post, setPost] = React.useState(null);
-
-  // React.useEffect(() => {
-  //   axios.get(baseURL).then((response) => {
-  //     setPost(response.data);
-  //   });
-  // }, []);
-
-  // if (!post) return null;
+function Tips() {
 
 
+
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+  }, []);
+
+  if (!post) return null;
 
 
 
@@ -46,4 +46,4 @@ function TipsPage() {
 </div> 
     ) 
 }
-export default TipsPage;
+export default Tips;

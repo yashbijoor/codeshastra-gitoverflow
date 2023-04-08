@@ -3,10 +3,10 @@ import '../css/RegistrationForm.css'
 function RegistrationForm() {
     return(
       <div className="form">
+        <h1>Enter Information</h1>
           <div className="form-body">
-            <h1>Enter Information</h1>
               <div className="M_Income">
-                  <label className="form__label" for="M_Income">Monthly Income</label>
+                  <label className="form__label" for="M_Income">Income</label>
                   <input className="form__input" type="text" id="M_Income" placeholder="Enter Your Monthly Income"/>
               </div>
                 

@@ -1,14 +1,16 @@
 body{
-    background:#808080;  /* fallback for old browsers */
+    background-image: url("https://img5.goodfon.com/wallpaper/nbig/f/b6/gradient-abstraktsiia-sinii-linii-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     //background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
     //background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .form{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     width: 400px;
     margin: 10px auto;
-    padding: 0px;
+    padding: 20px;
     /* height: 600px; */
 }
 
@@ -22,16 +24,16 @@ body{
 }
 
 .form__label{
-    width: 100%;
+    width: 50%;
     padding: 5px;
 }
 
 .form__input{
+    padding: 5px;
   float:right;
   text-align: left;
-  height:10px;
-  padding:5px;
-  width: 50%;
+  height:35px;
+  width: 100%;
 }
 
 .footer{
@@ -39,6 +41,3 @@ body{
     padding:25px;
 }
 
-h1{
-  text-align:center;
-}

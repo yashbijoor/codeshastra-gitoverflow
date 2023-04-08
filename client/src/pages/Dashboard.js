@@ -3,7 +3,7 @@ import Map1 from "../components/Map1";
 import Map2 from "../components/Map2";
 import Table from "../components/Table";
 import Select from "../components/Select";
-// import "./Dashboard.css";
+import "../css/Dashboard.css";
 
 const Dashboard = () => {
 
