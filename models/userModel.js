@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
 const categorySchema = require("./categoryModel");
+const loanModel = require("./loanModel");
 
 const userSchema = new mongoose.Schema({
   name: String,
@@ -14,6 +15,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   monthlyIncome: Number,
   budget: [categorySchema],
+  loan: [loanModel],
   janExpense: [Number],
   febExpense: [Number],
   marchExpense: [Number],

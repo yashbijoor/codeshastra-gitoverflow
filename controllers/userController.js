@@ -169,3 +169,24 @@ exports.updateExpense = async (req, res, next) => {
     res.json({ Error: "Internal Server Error" });
   }
 };
+
+exports.getLoanInfo = async (req, res, next) => {
+  try {
+    const user = await User.findOne({ email: req.session.email });
+    if (user) {
+      res.json({ Loan: user.loan });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+exports.updateLoan = async (req, res, next) => {
+  try {
+    await User.updateOne({ email: req.session.email }, { loan: req.body.loan });
+    res.json({ Success: "Updated Loan Successfully" });
+  } catch (error) {
+    console.log(error);
+    res.json({ Error: "Internal Server Error" });
+  }
+};

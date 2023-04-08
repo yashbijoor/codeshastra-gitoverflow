@@ -11,4 +11,8 @@ router.post("/user/info", userController.informationController);
 
 router.post("/user/update-expense", userController.updateExpense);
 
+router.post("/user/loan", userController.updateLoan);
+
+router.post("/user/loan-info", userController.getLoanInfo);
+
 module.exports = router;
