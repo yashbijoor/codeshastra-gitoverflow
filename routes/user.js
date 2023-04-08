@@ -9,4 +9,6 @@ router.post("/user/sign-in", userController.signinController);
 
 router.post("/user/info", userController.informationController);
 
+router.post("/user/update-expense", userController.updateExpense);
+
 module.exports = router;

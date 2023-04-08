@@ -14,7 +14,18 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   monthlyIncome: Number,
   budget: [categorySchema],
-  expense: [categorySchema],
+  janExpense: [Number],
+  febExpense: [Number],
+  marchExpense: [Number],
+  aprilExpense: [Number],
+  mayExpense: [Number],
+  juneExpense: [Number],
+  julyExpense: [Number],
+  augExpense: [Number],
+  septExpense: [Number],
+  octExpense: [Number],
+  novExpense: [Number],
+  decExpense: [Number],
 });
 
 module.exports = userSchema;
