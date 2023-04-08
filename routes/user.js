@@ -13,6 +13,8 @@ router.post("/user/update-expense", userController.updateExpense);
 
 router.post("/user/loan", userController.updateLoan);
 
-router.post("/user/loan-info", userController.getLoanInfo);
+router.get("/user/loan-info", userController.getLoanInfo);
+
+router.get("/user/expense-info", userController.getExpenseInfo);
 
 module.exports = router;

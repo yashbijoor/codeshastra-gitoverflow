@@ -190,3 +190,41 @@ exports.updateLoan = async (req, res, next) => {
     res.json({ Error: "Internal Server Error" });
   }
 };
+
+exports.getExpenseInfo = async (req, res, next) => {
+  try {
+    const user = await User.findOne({ email: req.session.email });
+    if (user) {
+      if (req.body.month == "jan") {
+        res.json({ Expense: user.janExpense });
+      } else if (req.body.month == "feb") {
+        res.json({ Expense: user.febExpense });
+      } else if (req.body.month == "mar") {
+        res.json({ Expense: user.marchExpense });
+      } else if (req.body.month == "apr") {
+        res.json({ Expense: user.aprilExpense });
+      } else if (req.body.month == "may") {
+        res.json({ Expense: user.mayExpense });
+      } else if (req.body.month == "jun") {
+        res.json({ Expense: user.juneExpense });
+      } else if (req.body.month == "jul") {
+        res.json({ Expense: user.julyExpense });
+      } else if (req.body.month == "aug") {
+        res.json({ Expense: user.augExpense });
+      } else if (req.body.month == "sep") {
+        res.json({ Expense: user.septExpense });
+      } else if (req.body.month == "oct") {
+        res.json({ Expense: user.octExpense });
+      } else if (req.body.month == "nov") {
+        res.json({ Expense: user.novExpense });
+      } else if (req.body.month == "dec") {
+        res.json({ Expense: user.decExpense });
+      } else {
+        res.json({ Error: "No match" });
+      }
+    }
+  } catch (error) {
+    console.log(error);
+    res.json({ Error: "Internal Server Error" });
+  }
+};
