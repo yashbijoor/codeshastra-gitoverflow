@@ -36,15 +36,37 @@ exports.signinController = async (req, res, next) => {
       if (cmp) {
         req.session.signedin = true;
         req.session.email = req.body.email;
-        res.json({ Status: "Auth Successful" });
+        res.json({ Success: "Auth Successful" });
       } else {
-        res.json({ Status: "Wrong email or password" });
+        res.json({ Error: "Wrong email or password" });
       }
     } else {
-      res.json({ Status: "Wrong email or password" });
+      res.json({ Error: "Wrong email or password" });
     }
   } catch (error) {
     console.log(error);
-    res.status(500).send("Internal Server Error Occured");
+    res.json({ Error: "Internal server error occured" });
+  }
+};
+
+exports.informationController = async (req, res, next) => {
+  try {
+    await User.updateOne(
+      { email: req.session.email },
+      { monthlyIncome: req.body.monthlyIncome }
+    );
+    await User.updateOne(
+      { email: req.session.email },
+      { budget: req.body.budget }
+    );
+    await User.updateOne(
+      { email: req.session.email },
+      { expense: req.body.expense }
+    );
+
+    res.json({ Success: "Updated successfully" });
+  } catch (error) {
+    console.log(error);
+    res.json({ Error: "Internal server error occured" });
   }
 };
