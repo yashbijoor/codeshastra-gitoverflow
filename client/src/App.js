@@ -5,20 +5,28 @@ import Map1 from './components/Map1';
 import Table from './components/Table';
 import Dashboard from './pages/Dashboard';
 import Select from './components/Select';
+import Header from './components/Header';
+import RegistrationForm from './components/RegistrationForm'
+import TipsPage from './components/Tips'
 
+
+    
 
 function App() {
   return (
-    <>
-    <header>
+    <div className="App">
+
+    {/* <header>
       <Navbar></Navbar>
     </header>
     <div>
         
-      <Dashboard/>
+      <Dashboard/> */}
       
+      <TipsPage/>
+      {/* <Header/>
+      <RegistrationForm/> */}
     </div>
-    </>
   );
 }
 
