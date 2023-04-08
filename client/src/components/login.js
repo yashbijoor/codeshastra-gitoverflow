@@ -57,7 +57,7 @@ function Login() {
                 </div>
             </div>
             <div class="footer">
-                <button onClick={()=>handleSubmit()} type="login" class="btn">Login</button>
+                <button style={{border: "1px solid #fff"}} onClick={()=>handleSubmit()} type="login" class="btn">Login</button>
             </div>
             </div>
         </div>

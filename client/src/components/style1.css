@@ -26,9 +26,10 @@
     padding: 5px;
 }
 
-.btn {
+button.btn {
     width: 7vw;
     height: 3vw;
     font-size: 1.3vw;
     padding: 0;
+    background-color: #fff;
 }

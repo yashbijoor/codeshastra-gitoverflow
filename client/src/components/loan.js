@@ -30,7 +30,7 @@ function Loan() {
             <div className="form-body">
                 <div className="amount">
                     <label className="form__label" for="amount">Loan Amount</label>
-                    <input  type="email" id="email" className="form__input" value={amount} onChange = {(e) => handleInputChange(e)} placeholder="Enter Loan Amount"/>
+                    <input  type="Number" id="email" className="form__input" value={amount} onChange = {(e) => handleInputChange(e)} placeholder="Enter Loan Amount"/>
                 </div>
                 <div className="emi">
                     <label className="form__label" for="emi">EMI </label>
@@ -42,7 +42,7 @@ function Loan() {
                 </div>
             </div>
             <div class="footer">
-                <button onClick={()=>handleSubmit()} type="submit" class="btn">Next</button>
+                <button style={{border: "1px solid #fff"}} onClick={()=>handleSubmit()} type="submit" class="btn">Next</button>
             </div>
             </div>
         </div>

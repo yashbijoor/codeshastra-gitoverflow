@@ -1,0 +1,43 @@
+body{
+    background-image: url("https://img.freepik.com/premium-vector/abstract-seamless-pattern-background-with-artistic-style_7505-1600.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); */
+}
+.form{
+    background-color: rgba(250, 250, 250, 0.7);
+    border-radius: 15px;
+    width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    /* height: 600px; */
+}
+
+.form-body{
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.form-body > *{
+    padding: 15px;
+}
+
+.form__label{
+    width: 50%;
+    padding: 5px;
+}
+
+.form__input{
+    padding: 5px;
+  float:right;
+  text-align: left;
+  height:35px;
+  width: 100%;
+}
+
+.footer{
+    text-align: center;
+    padding:25px;
+}
+

@@ -1,0 +1,10 @@
+.table-structure{
+    margin: auto ;
+    margin-top: 4rem;
+    
+    width: 600px;
+    /* display:flex;
+    justify-content: center;
+    align-content:space-evenly ; */
+    border: 2px solid black;
+}
