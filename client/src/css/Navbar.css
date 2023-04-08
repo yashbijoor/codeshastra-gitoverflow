@@ -2,3 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
+.bg-dark navbar-dark navbar{
+    height:90%;
+}
